@@ -127,7 +127,7 @@ class Headline1 extends StatelessWidget {
         strutStyle: strutStyle,
         textWidthBasis: textWidthBasis,
         semanticsLabel: semanticsLabel,
-        style: context.textTheme.headline1!.merge(style));
+        style: context.textTheme.displayMedium);
   }
 }
 
