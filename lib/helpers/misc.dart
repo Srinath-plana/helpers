@@ -123,13 +123,13 @@ class Misc {
     final PipelineOwner pipelineOwner = PipelineOwner();
     final Size logicalSize =
         size ?? ui.window.physicalSize / ui.window.devicePixelRatio;
-    final RenderView renderView = RenderView(
-      child: RenderPositionedBox(child: repaintBoundary),
-      configuration: ViewConfiguration(
-        size: logicalSize,
-        devicePixelRatio: pixelRatio ?? 1.0,
-      ),
-    );
+    // final RenderView renderView = RenderView(
+    //   child: RenderPositionedBox(child: repaintBoundary),
+    //   configuration: ViewConfiguration(
+    //     size: logicalSize,
+    //     devicePixelRatio: pixelRatio ?? 1.0,
+    //   ),
+    // );
 
     int retryCounter = 3;
     bool isDirty = false;
@@ -153,8 +153,8 @@ class Misc {
       ),
     ).attachToRenderTree(buildOwner);
 
-    pipelineOwner.rootNode = renderView;
-    renderView.prepareInitialFrame();
+    // pipelineOwner.rootNode = renderView;
+    // renderView.prepareInitialFrame();
 
     void buildScope() {
       buildOwner

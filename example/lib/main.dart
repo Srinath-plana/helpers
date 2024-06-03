@@ -17,12 +17,7 @@ class App extends StatelessWidget {
         primaryColor: const Color(0xFF37393d),
         scaffoldBackgroundColor: Colors.grey[100],
         textTheme: const TextTheme(
-          bodyText1: TextStyle(color: Colors.white),
-          headline4: TextStyle(
-            color: Colors.black,
-            fontSize: 30,
-            fontWeight: FontWeight.bold,
-          ),
+        
         ),
       ),
       title: 'HELPERS EXAMPLE',

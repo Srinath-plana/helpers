@@ -130,7 +130,7 @@ class _NumericButton extends StatelessWidget {
             Text(
               number.title,
               style: _numeric.style.style ??
-                  context.textTheme.bodyText1 ??
+                  context.textTheme.headlineMedium ??
                   const TextStyle(),
             ),
       ),
